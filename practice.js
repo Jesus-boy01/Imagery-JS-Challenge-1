@@ -11,20 +11,21 @@ calculate.addEventListener('click', (e)=> {
     
     let result;
 
-    if(operator === "Addition"){
-        result = userInput1 + userInput2;
-    } else if (operator === "Subtraction"){
-        result = userInput1 - userInput2;
-    } else if (operator === "Multiplication"){
-        result = userInput1 * userInput2;
-    } else if (operator === "Division"){
-        if(secondNumber !== 0){
-            result = userInput1 / userInput2;
-        } else {
-            alert("Cannot divide by 0");
-        }
-    } else {
-        result = "Invalid";
+    switch(operator) {
+        case "+":
+            result = userInput1 + userInput2;
+        break;
+        case "-":
+            result = userInput1 - userInput2;
+        break;
+        case "*":
+            result = userInput1 * userInput2;
+        break;
+        case "/":
+            result = userInput2 !== 0 ? userInput1 / userInput2 : 'Cannot divide by zero';
+        break;
+        default: 
+            result = "Invalid";
     }
 
     resultElement.innerText = result;

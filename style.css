@@ -1,0 +1,77 @@
+
+* {
+    background-color: #6e62d1;
+}
+.title {
+    text-align: center;
+}
+.title h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+.title-row h3 {
+    font-size: 2rem;
+}
+.calculator-form {
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+input[type="text"]{
+    background-color: #fff;
+    margin-bottom: 0.9em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+select {
+    background-color: #fff;
+    margin-bottom: 0.9em;
+    width: 38%;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    border: none;
+    outline: none; 
+    font-size: 1.1rem;
+}
+select option {
+    background-color: #fff;
+}
+.output {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 0 auto;
+    align-items: center;
+}
+.result-output {
+    margin-bottom: 1em;
+    width: 40%;
+    margin: 0 auto;
+}
+.result-output p {
+    background-color: #fff;
+    color: #000;
+    padding: 0.6em 2em;
+    font-size: 1.1rem;
+}
+.result-button button {
+    border: none;
+    background-color: #80f568;
+    padding: 1.2em 1.7em;
+    border-radius: 1.7em;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.reset-button button {
+    border: none;
+    background-color: #e91337;
+    padding: 1.2em 1.7em;
+    border-radius: 1.7em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9rem;
+}
